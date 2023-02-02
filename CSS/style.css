@@ -6,23 +6,136 @@
 
 html {
   font-size: 62.5%;
-  font-style: "Roboto";
+  font-family: "Roboto";
   font-weight: 700;
 }
 
 .main-conteiner {
+  display: flex;
+  flex-direction: column;
+  background-color: #301b52;
+  border: 1px solid #f2f2f2;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  max-width: 727px;
 }
 .logo-container {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 143px;
 }
+
+.logo-container h1 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-top: 13px;
+}
+
+.logo-container p {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  color: #ffffff;
+  margin-top: 13px;
+}
+
 .form-container {
+  width: 240px;
+  background-color: #f4f3f3;
+  border: 2px solid #bdbdbd;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 75px;
 }
 .login {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #301b52;
+  margin-top: 15px;
+  text-transform: capitalize;
 }
 .input-container {
+  margin-top: 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 13px;
+  width: 100%;
 }
+
+.input-container input {
+  width: 80%;
+  background-color: #f7f7f7;
+  border: 1px solid #828282;
+  border-radius: 20px;
+  height: 30px;
+  padding: 14px;
+}
+
 .password-container {
+  width: 100%;
+  margin-top: 13px;
 }
+
 .password {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  color: #301b52;
+  margin-left: 39px;
 }
 .button-container {
+  margin-top: 13px;
+  margin-bottom: 29px;
+}
+
+.login-btn {
+  width: 87px;
+  height: 26px;
+  background-color: #301b52;
+  border: none;
+  border-radius: 20px;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  color: #ffffff;
+  margin-right: 12px;
+}
+
+.signup-btn {
+  width: 87px;
+  height: 26px;
+  background-color: #db0916;
+  border: none;
+  border-radius: 20px;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 1024px) {
+  .main-conteiner {
+    flex-direction: row;
+    margin: 0 auto;
+    margin-top: 100px;
+    gap: 172px;
+  }
+
+  .form-container {
+    margin-top: 85px;
+  }
+
+  .logo-container {
+    margin-top: 100px;
+  }
 }
